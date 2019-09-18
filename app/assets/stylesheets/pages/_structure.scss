@@ -1,0 +1,85 @@
+// 1. Page container first for a good page structure
+.page-container {
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+
+  // 2. Then components, import fonts from google-fonts
+  .article-content {
+    margin: 30px;
+    padding: 30px;
+    // box-shadow: 1px 1px 10px lightgrey;
+    max-width: calc(100% - 300px);
+
+    h1 {
+      text-align: center;
+      letter-spacing: 2px;
+      color: #7C7287;
+      font-style: Manjari;
+      font-weight: 400;
+      font-size: 50px;
+    }
+
+    h2 {
+      color: #9DC0BC;
+      font-style: Manjari;
+      font-weight: 400;
+      font-size: 30px;
+    }
+
+    p {
+      font-style: Lato;
+      font-weight: 400;
+      font-size: 14px;
+      text-align: justify;
+    }
+
+    .article-img {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .author-details {
+    box-shadow: 1px 1px 10px lightgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px;
+    margin: 30px;
+    width: 300px;
+    height: 400px;
+    padding: 15px;
+    background-color: #EEFFFB;
+
+    h3 {
+      text-align: center;
+      color: #7C7287;
+      font-style: Manjari;
+      font-weight: 400;
+      font-size: 22px;
+    }
+
+    a {
+      margin: 10px;
+    }
+
+    img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 1px solid #7C7287;
+    }
+
+    .red {
+      color: red;
+    }
+  }
+}
